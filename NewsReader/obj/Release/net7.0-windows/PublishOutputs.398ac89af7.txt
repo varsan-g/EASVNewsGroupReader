@@ -1,0 +1,9 @@
+D:\NewsGroup\installer\NewsReader.exe
+D:\NewsGroup\installer\NewsReader.dll
+D:\NewsGroup\installer\NewsReader.deps.json
+D:\NewsGroup\installer\NewsReader.runtimeconfig.json
+D:\NewsGroup\installer\NewsReader.dll.config
+D:\NewsGroup\installer\NewsReader.pdb
+D:\NewsGroup\installer\MaterialDesignColors.dll
+D:\NewsGroup\installer\MaterialDesignThemes.Wpf.dll
+D:\NewsGroup\installer\Microsoft.Xaml.Behaviors.dll

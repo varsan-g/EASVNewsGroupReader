@@ -1,0 +1,165 @@
+﻿<Window x:Class="NewsReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="NewsGroup Reader - EASV Edition" 
+        Height="500" 
+        Width="450"
+        MinHeight="600"
+        MinWidth="800"
+        WindowStartupLocation="CenterScreen"
+          DataContext="{StaticResource MainViewModel}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="250" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Server Details -->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Server Details" 
+                       VerticalAlignment="Center" 
+                       Margin="10" />
+            <TextBox x:Name="ServerDetailsTextBox" 
+                     Grid.Column="1" 
+                     Margin="20,5,50,5" 
+                     VerticalAlignment="Center" 
+                     Padding="2" 
+                     Text="{Binding ServerDetails}" />
+        </Grid>
+
+        <!-- Username -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Username" 
+                       VerticalAlignment="Center" 
+                       Margin="10" />
+            <TextBox x:Name="UsernameTextBox" 
+                     Grid.Column="1" 
+                     Margin="20,5,50,5" 
+                     VerticalAlignment="Center" 
+                     Padding="2"
+                     Text="{Binding Username}" />
+        </Grid>
+
+        <!-- Password -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Password" 
+                       VerticalAlignment="Center" 
+                       Margin="10" />
+            <TextBox x:Name="PasswordTextBox" 
+                     Grid.Column="1" 
+                     Margin="20,5,50,5" 
+                     VerticalAlignment="Center" 
+                     Padding="2" 
+                         Text="{Binding Password}" />
+        </Grid>
+
+        <!-- Login Button -->
+        <Button Click="LoginButton_Click" 
+                Grid.Row="3" 
+                Content="Login" 
+                HorizontalAlignment="Center" 
+                Margin="5" 
+                Width="100" 
+                Height="30" 
+                Command="{Binding LoginCommand}" />
+
+        <Grid Grid.Row="4">
+            <Label 
+                Content="All NewsGroups"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"></Label>
+        </Grid>
+        <!-- All loaded NewsGroups -->
+        <Grid Grid.Row="5">
+
+            <ListView Grid.Row="5" Margin="10" 
+                      ItemsSource="{Binding NewsGroups}"
+                      ScrollViewer.PanningMode="VerticalOnly" 
+                      MinHeight="200" 
+                      SelectedItem="{Binding SelectedNewsGroup, Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+        <Grid Grid.Row="4"
+              Grid.Column="1">
+            <Label 
+                Content="All articles in the selected NewsGroup"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"></Label>
+        </Grid>
+
+        <!-- View NewsGroup Button -->
+        <Button Click="ViewNewsGroupButton_Click" Grid.Row="6" 
+                Content="View NewsGroup" 
+                HorizontalAlignment="Center" 
+                Margin="5" 
+                Width="120" 
+                Height="30" 
+                Command="{Binding ViewNewsGroupCommand}" />
+        
+        
+        <!-- All loaded Articles -->
+        <Grid Grid.Row="5" Grid.Column="1">
+			<ListView Margin="10" ItemsSource="{Binding ArticleHeadlines}" 
+                      ScrollViewer.PanningMode="VerticalOnly" 
+                      MinHeight="200" 
+                      SelectedItem="{Binding SelectedArticle, Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <!-- Read Articles Button -->
+        <Button Click="LoginButton_Click" 
+                Grid.Row="6" 
+                Grid.Column="1" 
+                Content="Read Article" 
+                HorizontalAlignment="Left" 
+                Margin="70,0,0,0" 
+                Width="120" 
+                Height="30"
+                Command="{Binding ReadArticleCommand}" />
+
+        <!-- Post an Article Button -->
+        <Button Click="PostArticleButton_Click" 
+                Grid.Row="6" 
+                Grid.Column="1" 
+                Content="Post an Article" 
+                HorizontalAlignment="Right" 
+                Margin="0,0,70,0" 
+                Width="120" 
+                Height="30"
+                Command="{Binding PostArticleCommand}"/>
+    </Grid>
+</Window>
