@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bleach\\Source\\Repos\\varsan300\\NewsReaderApp\\NewsReader\\NewsReader.csproj": {}
+    "C:\\Users\\Bleach\\OneDrive\\BRAINDRIVE\\OneDrive\\Documents\\GitHub\\EASVNewsGroupReader\\NewsReader\\NewsReader.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bleach\\Source\\Repos\\varsan300\\NewsReaderApp\\NewsReader\\NewsReader.csproj": {
+    "C:\\Users\\Bleach\\OneDrive\\BRAINDRIVE\\OneDrive\\Documents\\GitHub\\EASVNewsGroupReader\\NewsReader\\NewsReader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bleach\\Source\\Repos\\varsan300\\NewsReaderApp\\NewsReader\\NewsReader.csproj",
+        "projectUniqueName": "C:\\Users\\Bleach\\OneDrive\\BRAINDRIVE\\OneDrive\\Documents\\GitHub\\EASVNewsGroupReader\\NewsReader\\NewsReader.csproj",
         "projectName": "NewsReader",
-        "projectPath": "C:\\Users\\Bleach\\Source\\Repos\\varsan300\\NewsReaderApp\\NewsReader\\NewsReader.csproj",
+        "projectPath": "C:\\Users\\Bleach\\OneDrive\\BRAINDRIVE\\OneDrive\\Documents\\GitHub\\EASVNewsGroupReader\\NewsReader\\NewsReader.csproj",
         "packagesPath": "C:\\Users\\Bleach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bleach\\Source\\Repos\\varsan300\\NewsReaderApp\\NewsReader\\obj\\",
+        "outputPath": "C:\\Users\\Bleach\\OneDrive\\BRAINDRIVE\\OneDrive\\Documents\\GitHub\\EASVNewsGroupReader\\NewsReader\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

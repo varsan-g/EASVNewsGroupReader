@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VkiCLCwKuYGxtZ5TE8ww40yC2JreKOTPs+PZKy5nCfU22+7zDNswXThUJ3IdJinevcNfij765t4J5d8GRt2NRQ==",
+  "dgSpecHash": "b1cBpzv0l6XQrQ9ap+JQ0pkSILyGC5KWt5AvsE5bh2/x3YbWI7Ffm/Fm2t25PIuFYWgmMWLVd28Jgf2i0cKkLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bleach\\Source\\Repos\\varsan300\\NewsReaderApp\\NewsReader\\NewsReader.csproj",
+  "projectFilePath": "C:\\Users\\Bleach\\OneDrive\\BRAINDRIVE\\OneDrive\\Documents\\GitHub\\EASVNewsGroupReader\\NewsReader\\NewsReader.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bleach\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512"
   ],
