@@ -4,5 +4,7 @@ This C# program is designed to interact with UseNet, enabling users to read News
 
 ## Features
 **NewsGroup Reading:** Browse and read posts from various NewsGroups.
+
 **Post Creation:** Create and submit posts within selected NewsGroups.
+
 **Customization:** Configure preferences for NewsGroup selection and post formatting.
